@@ -1,0 +1,161 @@
+/* ==================== */
+/* Character */
+/* ==================== */
+
+
+
+
+/* trending */
+
+.trending{
+    padding: 20px 50px;
+}
+.trending .trend-header{
+    display: flex;
+    justify-content: center;
+}
+.trending .trend-header h1{
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.trending .trend-header i{
+    position: absolute;
+    width: 200px;
+    height: 2px;
+    background: black;
+    animation: animate infinite 2s;
+}
+@keyframes animate{
+    0%{
+		background-color:  red;
+	}
+	10%{
+		background-color:  blue;
+	}
+	20%{
+		background-color:  yellow;
+	}
+	30%{
+		background-color:  green;
+	}
+	40%{
+		background-color:  orange;
+	}
+	50%{
+		background-color:  purple;
+	}
+	60%{
+		background-color:  rgb(0, 251, 255);
+	}
+	70%{
+		background-color:  rgb(255, 0, 242);
+	}
+	80%{
+		background-color:  rgb(142, 41, 51);
+	}
+	100%{
+		background-color:  yellow;
+	}
+}
+
+.trending-characters{
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.trend{
+    width: 170px;
+    height: auto;
+    background: black;
+}
+.trend-image{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.trend-image img{
+    width: 100%;
+    transition: 0.5s;
+}
+.trend-content{
+    position: relative;
+    padding: 20px;
+    height: auto;
+    color: rgb(233, 233, 233);
+    border-top: 5px solid red;
+    transition:  background-color 0.5s ease;
+}
+.trend-content h5{
+    position: relative;
+    z-index: 5;
+    font-size: 15px;
+}
+.trend-content::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.9, 1.6, 0.4, 0.7);
+}
+.t::before{
+    transform: scaleY(0);
+}
+a:hover > .t::before{
+    z-index: 1;
+    transform: scaleY(1);
+}
+
+.trending-characters a:hover{
+    text-decoration: none;
+    
+}
+.trending-characters a:hover img{
+
+    transform: scale(1.05);
+
+}
+
+/* trending end */
+
+
+
+/* search  */
+
+
+.srh-div{
+    padding: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+}
+.srh-div .search{
+    padding: 10px 20px;
+    margin-left: 50px;
+    width: 40%;
+    font-size: 30px;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+}
+.magnificant-glass{
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    background: white;
+}
+
+
+
+/* search end */
+
+
+/* ==================== */
+/* Character end */
+/* ==================== */

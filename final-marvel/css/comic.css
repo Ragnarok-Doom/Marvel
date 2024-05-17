@@ -1,0 +1,171 @@
+/****************COMIC*********************/
+body::-webkit-scrollbar{
+	display: none;
+}
+.container-com{
+    width: 100%;
+    display: flex;
+    background-color: black;
+}
+.container-com  .main{
+    width: 100%;
+    filter: blur(15px);
+    opacity: 0.3;
+}
+.container-com .min{
+    width: 50%;
+}
+.comic-image{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 100px;
+    display: flex;
+}
+.comic-image-content{
+    color: white;
+    margin-left: 100px;
+    width: 500px;
+    /* background-color: aqua; */
+}
+.swap{
+    display: flex;
+    justify-content: space-between;
+}
+.comic-image-content a{
+    color: white;
+}
+.comic-image-content a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+/****************COMIC END*********************/
+
+/****************COMIC CODE*********************/
+.code{ 
+    width: 1300px;
+    height: auto;
+    background: rgb(197, 203, 199);
+    position: absolute;
+    margin-top: 800px;
+    margin-left: 150px;
+    display: flex;
+    z-index: 1;
+    padding-bottom: 20px;
+}
+.code .code1{
+    margin-top: 50px;
+    margin-left: 70px;
+    width: 25%;
+    
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.code .code1 input{
+    margin-top: 50px;
+    width: 100%;
+    height: 12%;
+    padding: 8px;
+    outline: none;
+    border: none;
+}
+.code1 button{
+    color: black;
+    border: 2px solid black;
+    margin-top: 20px;
+    position: absolute;
+    padding: 10px 20px;
+    width: 25%;
+    transition: 0.5s;
+    font-weight: 600;
+    cursor: pointer;
+}
+.code .code2{
+    margin-top: 50px;
+    margin-left: 70px;
+    width: 25%;
+    
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.code .code2 img{
+    margin-top: 30px;
+    width: 200px;
+}
+.code2 a{
+    color: white;
+    background: red;
+    /* margin-top: 100px; */
+    display: block;
+    width: 200px;
+    padding: 10px 20px;
+    /* width: 15%; */
+    transition: 0.5s;
+    font-weight: 600;
+}
+
+/****************COMIC CODE END*********************/
+
+/****************MORE DETAILS*********************/
+.more-details{
+    background: black;
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    margin-top: 1100px;
+    display: flex;
+    color: white;
+}
+.details-in{
+    display: flex;
+    margin-top: 200px;
+    margin-left: 200px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    gap: 70px;
+}
+.details-1 h1{
+    font-weight: 800;
+}
+.details-2{
+    margin-left: 100px;
+    margin-top: 93px;
+}
+.details-3{
+    margin-left: 100px;
+    margin-top: 93px;
+}
+/****************MORE DETAILS END*********************/
+
+
+/****************RECOMMANDED*********************/
+
+.recommand{
+    position: absolute;
+    margin-top: 1720px;
+    color: white;
+    margin-left: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.recommand h1{
+    font-size: 40px;
+}
+.recommand .extra-comic{
+    margin-top: 80px;
+    display: flex;
+}
+.recommand .extra-comic img{
+    width: 70%;
+}
+.recommand .extra-comic img:hover{
+    box-shadow: 0 0 10px 10px red;
+}
+.img-con-link{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+}
+.img-con-link:hover{
+    color: red;
+}
+
+
+/****************RECOMMANDED END*********************/
